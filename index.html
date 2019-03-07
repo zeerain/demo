@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #ffffff;
+    }
+    #scene {
+      width: 100%;
+      height: 100%;
+      /* background: pink; */
+      background-image: url('./images/bg/scene-bg.jpg');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    #scene > .left-icon {
+      width: 106.25px;
+      height: 50px;
+      /* background-color: #cccccc; */
+      background-image: url('./images/one/logo1.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute !important;
+      top: 20px !important;
+      left: 20px !important;
+    }
+    #scene > .right-icon {
+      width: 123.3px;
+      height: 25px;
+      /* background-color: #cccccc; */
+      background-image: url('./images/one/logo2.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute !important;
+      top: 30px !important;
+      left: calc(100% - 143.3px) !important;
+    }
+    #scene > .ball {
+      width: 200px;
+      height: 200px;
+      /* background-color: red; */
+      background-image: url('./images/one/ball.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute !important;
+      top: calc(100% - 125px) !important;
+      left: -75px !important;
+    }
+    #scene > .right-ball {
+      width: 180px;
+      height: 180px;
+      /* background-color: blue; */
+      background-image: url('./images/one/six2.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute !important;
+      top: calc(100% - 150px) !important;
+      left: calc(100% - 120px) !important;
+    }
+
+    #scene > .mid-ball {
+      width: 100px;
+      height: 100px;
+      /* background-color: yellowgreen; */
+      background-image: url('./images/one/six1.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute !important;
+      top: calc(100% - 100px) !important;
+      left: calc(100% - 180px) !important;
+      animation:change 4s linear infinite;
+    }
+
+    #scene > .center-invite-bg {
+      width: 152px;
+      height: 180px;
+      /* background-color: #f90; */
+      background-image: url('./images/one/text-bg.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      margin-top: -76px;
+      margin-left: -90px;
+    }
+    #scene > .center-invite {
+      width: 142.4px;
+      height: 160px;
+      /* background-color: red; */
+      background-image: url('./images/one/invite.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      margin-top: -80px;
+      margin-left: -71.2px;
+    }
+    #scene > .center-invite >.center-invite-en {
+      width: 115px;
+      height: 15px;
+      /* background-color: red; */
+      background-image: url('./images/one/invitation.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute !important;
+      left: 95px;
+      bottom: 38px;
+    }
+
+    #scene > .center-invite-text {
+      width: 228px;
+      height: 40px;
+      /* background-color: #03f; */
+      background-image: url('./images/one/desc.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      margin-top: 90px;
+      margin-left: -114px;
+    }
+
+    @keyframes change {
+      0% {transform:rotate(0deg)}
+      50% {transform:rotate(180deg)}
+      100% {transform:rotate(360deg)}
+    }
+  </style>
+</head>
+<body>
+    <div id="scene">
+      <div class="left-icon" data-depth="0.1"></div>
+      <div class="right-icon" data-depth="0.1"></div>
+      <div class="ball" data-depth="0.1"></div>
+      <div class="mid-ball" data-depth="0.1"></div>
+      <div class="right-ball" data-depth="0.3"></div>
+      <div class="center-invite-bg" data-depth="0.5"></div>
+      <div class="center-invite" data-depth="0.5">
+        <div class="center-invite-en"></div>
+      </div>
+      <div class="center-invite-text" data-depth="0.5"></div>
+    </div>
+    
+    <script src="./js/parallax.min.js"></script>
+    <script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+    </script>
+  
+</body>
+</html>

@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/zepto.fullpage.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/global.css">
+
   <style>
     * {
       padding: 0;
       margin: 0;
     }
-    html, body {
+    html, body, .wp, .wp-inner{
       width: 100%;
       height: 100%;
       overflow: hidden;
@@ -68,7 +72,7 @@
       position: absolute !important;
       top: calc(100% - 170px) !important;
       left: calc(100% - 120px) !important;
-      animation: change 10s linear infinite;
+      animation: change 12s linear infinite;
     }
 
     #scene > .mid-ball {
@@ -141,27 +145,60 @@
       50% {transform:rotate(180deg)}
       100% {transform:rotate(360deg)}
     }
+
   </style>
 </head>
 <body>
-    <div id="scene">
-      <div class="left-icon" data-depth="0.2"></div>
-      <div class="right-icon" data-depth="0.2"></div>
-      <div class="ball" data-depth="0.2"></div>
-      <div class="mid-ball" data-depth="0.2"></div>
-      <div class="right-ball" data-depth="0.5"></div>
-      <div class="center-invite-bg" data-depth="0.9"></div>
-      <div class="center-invite" data-depth="0.9">
-        <div class="center-invite-en"></div>
-      </div>
-      <div class="center-invite-text" data-depth="0.5"></div>
+    <div class="wp">
+        <div class="wp-inner">
+          <div class="page page1" id="scene">
+              <div class="left-icon js-animate hide" data-animate="slideDown" data-time="0" data-depth="0.2"></div>
+              <div class="right-icon js-animate hide" data-animate="slideDown" data-time="0" data-depth="0.2"></div>
+              <div class="ball js-animate hide" data-animate="slideUp" data-time="0"  data-depth="0.2"></div>
+              <div class="mid-ball js-animate hide" data-animate="slideUp" data-time="0"  data-depth="0.2"></div>
+              <div class="right-ball js-animate hide" data-animate="slideUp" data-time="0"  data-depth="0.5"></div>
+              <div class="center-invite-bg" data-depth="0.9"></div>
+              <div class="center-invite js-animate hide" data-animate="slideLeft" data-time="0" data-depth="0.9">
+                <div class="center-invite-en"></div>
+              </div>
+              <div class="center-invite-text js-animate hide" data-animate="slideRight" data-time="800" data-depth="0.5"></div>
+          </div>
+        </div>
     </div>
-    
+
+    <script src="./js/js.fullpage.js"></script>
     <script src="./js/parallax.min.js"></script>
-    <script>
-    var scene = document.getElementById('scene');
-    var parallaxInstance = new Parallax(scene);
+   
+     <script>
+        var forEach = [].forEach;
+
+        document.getElementsByClassName('wp-inner')[0].fullpage({
+            change: function (e) {
+                // 移除动画属性
+                forEach.call(document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate'), function (v) {
+                    v.classList.remove(v.dataset['animate']);
+                    v.classList.add('hide');
+                });
+            },
+            afterChange: function (e) {
+                // 添加动画属性
+                forEach.call(document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate'), function(v) {
+                    var time = v.dataset.time;
+                    setTimeout(function () {
+                        v.classList.add(v.dataset['animate']);
+                        v.classList.remove('hide');
+                    }, time);
+                });
+            }
+        });
     </script>
+     <script>
+
+       setTimeout(function () {
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+       }, 1000)
+      </script>
   
 </body>
 </html>

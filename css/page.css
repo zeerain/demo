@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html, body, .wp, .wp-inner{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+#scene, #scene2 {
+  width: 100%;
+  height: 100%;
+  /* background: pink; */
+  position: relative;
+}
+#bg-scene > .nf {
+  width: 128.33px;
+  height: 250px;
+  /* background-color: #cccccc; */
+  background-image: url('../images/bg/n5.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 3px;
+  left: 8px;
+}
+#bg-scene > .left-icon {
+  width: 106.25px;
+  height: 50px;
+  /* background-color: #cccccc; */
+  background-image: url('../images/one/logo1.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 20px;
+  left: 20px;
+}
+#bg-scene > .right-icon {
+  width: 123.3px;
+  height: 25px;
+  /* background-color: #cccccc; */
+  background-image: url('../images/one/logo2.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 30px;
+  /* left: calc(100% - 143.3px); */
+  right: 20px;
+}
+#scene > .ball {
+  width: 200px;
+  height: 200px;
+  /* background-color: red; */
+  background-image: url('../images/one/ball.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: calc(100% - 125px) !important;
+  left: -75px !important;
+}
+#scene2 > .yuan {
+  width: 230px;
+  height: 230px;
+  /*background-color: red;
+  */background-image: url('../images/bg/yuan.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 145px !important;
+  left: -60px !important;
+  animation: change 4s linear infinite;
+  -webkit-animation: change 4s linear infinite;
+}
+#scene2 > .yuan-right {
+  width: 200px;
+  height: 200px;
+  /*background-color: red;
+  */background-image: url('../images/bg/yuan2.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 270px !important;
+  right: -40px !important;
+}
+#scene2 .bar {
+  width: 212.34px;
+  height: 300px;
+  /* background-color: red; */
+  background-image: url('../images/bg/bar.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: calc(100% - 280px) !important;
+  left: -25px !important;
+}
+#scene2 .bar-t {
+  width: 137px;
+  height: 300px;
+  /* background-color: red; */
+  background-image: url('../images/bg/bar-t.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: -28px !important;
+  right: -25px !important;
+}
+#bg-scene > .right-ball {
+  width: 180px;
+  height: 157px;
+  /* background-color: blue; */
+  background-image: url('../images/one/six1.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: calc(100% - 170px) !important;
+  left: calc(100% - 120px) !important;
+  animation: change 8s linear infinite;
+  z-index: 200;
+}
+#bg-scene > .center-invite-text {
+  width: 285px;
+  height: 50px;
+  /* background-color: #03f; */
+  background-image: url('../images/one/desc.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 60px;
+  left: 50% !important;
+  /* margin-top: 100px; */
+  margin-left: -142.5px;
+}
+
+ #bg-scene > .mid-ball {
+  z-index: 200;
+  width: 100px;
+  height: 90px;
+  /* background-color: yellowgreen; */
+  background-image: url('../images/one/six3.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: calc(100% - 90px) !important;
+  left: calc(100% - 210px) !important;
+  animation:change 4s linear infinite;
+}
+
+#scene > .center-invite-bg {
+  width: 140px;
+  height: 175px;
+  /* background-color: #f90; */
+  background-image: url('../images/one/text-bg.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -87.5px;
+  margin-left: -70px;
+}
+#scene > .center-invite {
+  width: 142.4px;
+  height: 160px;
+  /* background-color: red; */
+  background-image: url('../images/one/invite.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -80px;
+  margin-left: -71.2px;
+}
+#scene > .center-invite >.center-invite-en {
+  width: 115px;
+  height: 15px;
+  /* background-color: red; */
+  background-image: url('../images/one/invitation.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  left: 95px;
+  bottom: 38px;
+}
+
+#scene > .center-invite-text {
+  width: 285px;
+  height: 50px;
+  /* background-color: #03f; */
+  background-image: url('../images/one/desc.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: 100px;
+  margin-left: -142.5px;
+}
+
+@keyframes change {
+  0% {transform:rotate(0deg)}
+  50% {transform:rotate(180deg)}
+  100% {transform:rotate(360deg)}
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-image: url(../images/bg/scene-bg.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  -webkit-transition: background-image 200ms ease-in 200ms;
+  -o-transition: background-image 200ms ease-in 200ms;
+  transition: background-image 200ms ease-in 200ms;
+  -moz-transition: background-image 200ms ease-in 200ms;
+  -ms-transition: background-image 200ms ease-in 200ms;
+}
+.wp {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+.two1 {
+  width: 200px;
+  height: 80px;
+  /* background-color: #03f; */
+  background-image: url('../images/two/1.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -130px;
+  margin-left: -150px;
+}
+.two2 {
+  width: 200px;
+  height: 80px;
+  /* background-color: #03f; */
+  background-image: url('../images/two/2.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -40px;
+  margin-left: -100px;
+}
+.two3 {
+  width: 200px;
+  height: 80px;
+  /* background-color: #03f; */
+  background-image: url('../images/two/3.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: 60px;
+  margin-left: -50px;
+}

@@ -5,200 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/zepto.fullpage.css">
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="stylesheet" href="./css/global.css">
-
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-    html, body, .wp, .wp-inner{
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background: #ffffff;
-    }
-    #scene {
-      width: 100%;
-      height: 100%;
-      /* background: pink; */
-      background-image: url('./images/bg/scene-bg.jpg');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      position: relative;
-    }
-    #scene > .left-icon {
-      width: 106.25px;
-      height: 50px;
-      /* background-color: #cccccc; */
-      background-image: url('./images/one/logo1.png');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      position: absolute !important;
-      top: 20px !important;
-      left: 20px !important;
-    }
-    #scene > .right-icon {
-      width: 123.3px;
-      height: 25px;
-      /* background-color: #cccccc; */
-      background-image: url('./images/one/logo2.png');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      position: absolute !important;
-      top: 30px !important;
-      left: calc(100% - 143.3px) !important;
-    }
-    #scene > .ball {
-      width: 200px;
-      height: 200px;
-      /* background-color: red; */
-      background-image: url('./images/one/ball.png');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      position: absolute !important;
-      top: calc(100% - 125px) !important;
-      left: -75px !important;
-    }
-    #scene > .right-ball {
-      width: 180px;
-      height: 157px;
-      /* background-color: blue; */
-      background-image: url('./images/one/six1.png');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      position: absolute !important;
-      top: calc(100% - 170px) !important;
-      left: calc(100% - 120px) !important;
-      animation: change 8s linear infinite;
-    }
-
-    #scene > .mid-ball {
-      width: 100px;
-      height: 90px;
-      /* background-color: yellowgreen; */
-      background-image: url('./images/one/six3.png');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      position: absolute !important;
-      top: calc(100% - 90px) !important;
-      left: calc(100% - 210px) !important;
-      animation:change 4s linear infinite;
-    }
-
-    #scene > .center-invite-bg {
-      width: 140px;
-      height: 175px;
-      /* background-color: #f90; */
-      background-image: url('./images/one/text-bg.png');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      position: absolute !important;
-      top: 50% !important;
-      left: 50% !important;
-      margin-top: -87.5px;
-      margin-left: -70px;
-    }
-    #scene > .center-invite {
-      width: 142.4px;
-      height: 160px;
-      /* background-color: red; */
-      background-image: url('./images/one/invite.png');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      position: absolute !important;
-      top: 50% !important;
-      left: 50% !important;
-      margin-top: -80px;
-      margin-left: -71.2px;
-    }
-    #scene > .center-invite >.center-invite-en {
-      width: 115px;
-      height: 15px;
-      /* background-color: red; */
-      background-image: url('./images/one/invitation.png');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      position: absolute !important;
-      left: 95px;
-      bottom: 38px;
-    }
-
-    #scene > .center-invite-text {
-      width: 228px;
-      height: 40px;
-      /* background-color: #03f; */
-      background-image: url('./images/one/desc.png');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      position: absolute !important;
-      top: 50% !important;
-      left: 50% !important;
-      margin-top: 90px;
-      margin-left: -114px;
-    }
-
-    @keyframes change {
-      0% {transform:rotate(0deg)}
-      50% {transform:rotate(180deg)}
-      100% {transform:rotate(360deg)}
-    }
-
-  </style>
 </head>
 <body>
+  <div id="bg-scene" class="bg" >
+    <div class="left-icon" data-depth="0.3"></div>
+    <div class="right-icon" data-depth="0.3"></div>
+    <div class="mid-ball" data-depth="0.3"></div>
+    <div class="right-ball" data-depth="0.3"></div>
+    <div class="nf hide" data-depth="0.3"></div>
+    <div class="center-invite-text hide" data-depth="0.1"></div>
+
+  </div>
+
+
     <div class="wp">
         <div class="wp-inner">
-          <div class="page page1" id="scene">
-              <div class="left-icon js-animate hide" data-animate="slideDown" data-time="0" data-depth="0.2"></div>
-              <div class="right-icon js-animate hide" data-animate="slideDown" data-time="0" data-depth="0.2"></div>
+          <div class="page" id="scene">
               <div class="ball js-animate hide" data-animate="slideUp" data-time="0"  data-depth="0.9"></div>
-              <div class="mid-ball js-animate hide" data-animate="slideUp" data-time="0"  data-depth="0.9"></div>
-              <div class="right-ball js-animate hide" data-animate="slideUp" data-time="0"  data-depth="0.9"></div>
               <div class="center-invite-bg" data-depth="0.1"></div>
               <div class="center-invite js-animate hide" data-animate="slideRight" data-time="0" data-depth="0.1">
                 <div class="center-invite-en"></div>
               </div>
               <div class="center-invite-text js-animate hide" data-animate="slideLeft" data-time="0" data-depth="0.1"></div>
           </div>
+          <div class="page" id="scene2">
+              <div class="bar js-animate hide" data-animate="slideUp" data-time="0"  data-depth="0.9"></div>
+              <div class="bar-t js-animate hide" data-animate="slideDown" data-time="0"  data-depth="0.9"></div>
+              <div class="yuan js-animate hide" data-animate="slideLeft" data-time="0"  ></div>
+              <div class="yuan-right js-animate hide" data-animate="slideLeft" data-time="0"></div>
+              <div class="two1 js-animate hide" data-animate="slideLeft" data-time="100"></div>
+              <div class="two2 js-animate hide" data-animate="slideLeft" data-time="600"></div>
+              <div class="two3 js-animate hide" data-animate="slideLeft" data-time="1100"></div>
+          </div>
+
         </div>
     </div>
-
-    <script src="./js/js.fullpage.js"></script>
-    <script src="./js/parallax.min.js"></script>
-   
-     <script>
-        var forEach = [].forEach;
-
-        document.getElementsByClassName('wp-inner')[0].fullpage({
-            change: function (e) {
-                // 移除动画属性
-                forEach.call(document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate'), function (v) {
-                    v.classList.remove(v.dataset['animate']);
-                    v.classList.add('hide');
-                });
-            },
-            afterChange: function (e) {
-                // 添加动画属性
-                forEach.call(document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate'), function(v) {
-                    var time = v.dataset.time;
-                    setTimeout(function () {
-                        v.classList.add(v.dataset['animate']);
-                        v.classList.remove('hide');
-                    }, time);
-                });
-            }
-        });
-    </script>
-     <script>
-
-       setTimeout(function () {
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
-       }, 1000)
-      </script>
-  
+    <script src="./dist/bundle.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@ html, body, .wp, .wp-inner{
   background: transparent;
 }
 
-#scene, #scene2 {
+#scene, #scene2,  #scene3{
   width: 100%;
   height: 100%;
   /* background: pink; */
@@ -105,7 +105,7 @@ html, body, .wp, .wp-inner{
   top: 270px !important;
   right: -40px !important;
 }
-#scene2 .bar {
+#scene2 .bar, #scene3 .bar {
   width: 212.34px;
   height: 300px;
   /* background-color: red; */
@@ -116,7 +116,7 @@ html, body, .wp, .wp-inner{
   top: calc(100% - 280px) !important;
   left: -25px !important;
 }
-#scene2 .bar-t {
+#scene2 .bar-t, #scene3 .bar-t {
   width: 137px;
   height: 300px;
   /* background-color: red; */
@@ -265,6 +265,45 @@ html, body, .wp, .wp-inner{
   margin-top: -130px;
   margin-left: -150px;
 }
+.three {
+  width: 131.85px;
+  height: 150px;
+  /* background-color: #03f; */
+  background-image: url('../images/bg/n5.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -125px;
+  margin-left: -125px;
+}
+.three1 {
+  width: 160px;
+  height: 60px;
+  /* background-color: #03f; */
+  background-image: url('../images/three/nlc.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -70px;
+  margin-left: -45px;
+}
+.three2 {
+  width: 300px;
+  height: 120px;
+  /* background-color: #03f; */
+  background-image: url('../images/three/cc.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -10px;
+  margin-left: -150px;
+}
 .two2 {
   width: 200px;
   height: 80px;
@@ -278,6 +317,8 @@ html, body, .wp, .wp-inner{
   margin-top: -40px;
   margin-left: -100px;
 }
+
+
 .two3 {
   width: 200px;
   height: 80px;

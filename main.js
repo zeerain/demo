@@ -19,14 +19,15 @@ $('.wp-inner')[0].fullpage({
             v.classList.remove(v.dataset['animate']);
             v.classList.add('hide');
         });
-        if (e.cur === 1 && e.prev === 0) {
+        if (e.cur === 1  || e.cur === 2) {
             var background = new Image();
             background.src = './images/bg/bg2.jpg';
-            background.onload = function () {
-                $('#bg-scene').css({
-                    backgroundImage: 'url(' + background.src + ')'
-                })
-            }
+            $('#bg-scene').css({
+                backgroundImage: 'url(' + background.src + ')'
+            })
+            // background.onload = function () {
+                
+            // }
             
             $('.left-icon').addClass('hide')
             $('.right-icon').addClass('hide')
@@ -37,7 +38,7 @@ $('.wp-inner')[0].fullpage({
             $('.center-invite-text').removeClass('hide')
             
 
-        } else {
+        } else if (e.cur === 0) {
             $('.left-icon').removeClass('hide')
             $('.right-icon').removeClass('hide')
             $('.nf').addClass('hide')

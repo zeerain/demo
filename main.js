@@ -27,16 +27,24 @@ $('.wp-inner')[0].fullpage({
                     backgroundImage: 'url(' + background.src + ')'
                 })
             }
+            
             $('.left-icon').addClass('hide')
             $('.right-icon').addClass('hide')
+            $('.left-logo').removeClass('hide')
+            $('.right-logo').removeClass('hide')
+
             $('.nf').removeClass('hide')
             $('.center-invite-text').removeClass('hide')
+            
 
         } else {
             $('.left-icon').removeClass('hide')
             $('.right-icon').removeClass('hide')
             $('.nf').addClass('hide')
             $('.center-invite-text').addClass('hide')
+            $('.left-logo').addClass('hide')
+            $('.right-logo').addClass('hide')
+
             var background = new Image();
             background.src = './images/bg/scene-bg.jpg';
             background.onload = function () {

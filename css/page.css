@@ -663,3 +663,55 @@ html, body, .wp, .wp-inner{
   right: 50%;
   margin-right: -78px;
 }
+.uu1 {
+  width: 194px;
+  height: 20px;
+  background: url('../images/10/101.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 170px !important;
+  right: 50%;
+  margin-right: -97px;
+}
+.uu2 {
+  width: 300px;
+  height: 140px;
+  background: url('../images/10/102.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 220px !important;
+  right: 50%;
+  margin-right: -150px;
+}
+.uu3 {
+  width: 164px;
+  height: 20px;
+  background: url('../images/10/103.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 385px !important;
+  right: 50%;
+  margin-right: -82px;
+}
+
+.uu4 {
+  width: 185.16px;
+  height: 20px;
+  background: url('../images/10/104.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 430px !important;
+  right: 50%;
+  margin-right: -92.58px;
+}
+
+.uu5 {
+  width: 145.6px;
+  height: 35px;
+  background: url('../images/10/105.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 470px !important;
+  right: 50%;
+  margin-right: -72.8px;
+}

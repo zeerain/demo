@@ -3,7 +3,7 @@ require('./css/animations.css')
 require('./css/zepto.fullpage.css')
 require('./css/page.css')
 
-import Parallax from 'parallax-js'
+// import Parallax from 'parallax-js'
 import $ from 'jquery'
 require('./js/js.fullpage.js')
 

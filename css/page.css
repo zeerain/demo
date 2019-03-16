@@ -590,3 +590,76 @@ html, body, .wp, .wp-inner{
   background: url('../images/8/e2-x.png') no-repeat;
   background-size: contain;
 }
+
+.pp1 {
+  width: 94px;
+  height: 40px;
+  background: url('../images/9/91.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 130px !important;
+  right: 40px;
+}
+.pp2 {
+  width: 94px;
+  height: 40px;
+  background: url('../images/9/92.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 180px !important;
+  right: 50%;
+  margin-right: -50px;
+}
+
+.pp3 {
+  width: 268px;
+  height: 20px;
+  background: url('../images/9/93.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 220px !important;
+  right: 50%;
+  margin-right: -134px;
+}
+
+.pp4 {
+  width: 66px;
+  height: 15px;
+  background: url('../images/9/94.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 250px !important;
+  right: 50%;
+  margin-right: -33px;
+}
+
+.pp5 {
+  width: 164px;
+  height: 25px;
+  background: url('../images/9/95.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 275px !important;
+  right: 50%;
+  margin-right: -87px;
+}
+.pp6 {
+  width: 246px;
+  height: 220px;
+  background: url('../images/9/96.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 315px !important;
+  right: 50%;
+  margin-right: -123px;
+}
+.pp7 {
+  width: 156px;
+  height: 50px;
+  background: url('../images/9/97.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute !important;
+  top: 545px !important;
+  right: 50%;
+  margin-right: -78px;
+}

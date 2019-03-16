@@ -3,7 +3,7 @@ require('./css/animations.css')
 require('./css/zepto.fullpage.css')
 require('./css/page.css')
 
-// import Parallax from 'parallax-js'
+import Parallax from 'parallax-js'
 import $ from 'jquery'
 require('./js/js.fullpage.js')
 
@@ -92,8 +92,8 @@ setTimeout(function () {
 //   var scene = document.getElementById('bg-scene');
 //   var parallaxInstance = new Parallax(scene);
 
-//   var scene2 = document.getElementById('scene');
-//   var parallaxInstance2 = new Parallax(scene2);
+  var scene2 = document.getElementById('scene');
+  var parallaxInstance2 = new Parallax(scene2);
 }, 1000)
 
 

@@ -97,15 +97,15 @@ html, body {
   -webkit-animation: change 4s linear infinite;
 }
 #scene2 > .yuan-right {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 150px;
   /*background-color: red;
-  */background-image: url('../images/bg/yuan2.png');
+  */background-image: url('../images/two/555.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: absolute !important;
   top: 270px !important;
-  right: -40px !important;
+  right: -10px !important;
 }
 #scene2 .bar, #scene3 .bar, #scene4 .bar, #scene5 .bar,  #scene6 .bar {
   width: 212.34px;
@@ -847,4 +847,15 @@ html, body {
   top: 470px !important;
   right: 50%;
   margin-right: -72.8px;
+}
+
+.diqiu {
+  width: 286px;
+  height: 200px;
+  background-image: url('../images/10/666.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: 230px !important;
+  right: -80px !important;
 }

@@ -53,6 +53,17 @@ $('.wp-inner')[0].fullpage({
                     backgroundImage: 'url(' + background.src + ')'
                 })
             }
+        } else if (e.cur === 4) {
+            var background = new Image();
+            background.src = './images/bg/bg5.jpg';
+            $('#bg-scene').css({
+                backgroundImage: 'url(' + background.src + ')'
+            })
+            $('.nf').addClass('hide')
+            $('.center-invite-text').addClass('t100')
+            $('.left-logo').addClass('t50')
+            $('.right-logo').addClass('t60')
+
         }
         
     },

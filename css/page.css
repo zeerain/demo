@@ -573,8 +573,8 @@ html, body {
   height: 100%;
 }
 .eli-r {
-  border-top: 5px transparent solid;
-  border-bottom: 5px transparent solid;
+  border-top: 10px transparent solid;
+  border-bottom: 10px transparent solid;
   box-sizing: border-box;
   flex: 1;
   height: 100%;
@@ -583,7 +583,7 @@ html, body {
   background: url('../images/8/e1.png') no-repeat;
   background-size: auto 100%;
 }
-.eli12{
+.eli12x{
   background: url('../images/8/e1-x.png') no-repeat;
   background-size: contain;
 }
@@ -593,6 +593,134 @@ html, body {
 }
 .eli22{
   background: url('../images/8/e2-x.png') no-repeat;
+  background-size: contain;
+}
+.eli3{
+  background: url('../images/8/e3.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli32{
+  background: url('../images/8/e3-x.png') no-repeat;
+  background-size: contain;
+}
+.eli4{
+  background: url('../images/8/e4.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli42{
+  background: url('../images/8/e4-x.png') no-repeat;
+  background-size: contain;
+}
+.eli5{
+  background: url('../images/8/e4.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli52{
+  background: url('../images/8/e5-x.png') no-repeat;
+  background-size: contain;
+}
+.eli6{
+  background: url('../images/8/e6.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli62{
+  background: url('../images/8/e6-x.png') no-repeat;
+  background-size: contain;
+}
+.eli7{
+  background: url('../images/8/e7.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli72{
+  background: url('../images/8/e7-x.png') no-repeat;
+  background-size: contain;
+}
+.eli8{
+  background: url('../images/8/e8.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli82{
+  background: url('../images/8/e8-x.png') no-repeat;
+  background-size: contain;
+}
+.eli9{
+  background: url('../images/8/e9.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli92{
+  background: url('../images/8/e9-x.png') no-repeat;
+  background-size: contain;
+}
+.eli10{
+  background: url('../images/8/e10.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli102{
+  background: url('../images/8/e10-x.png') no-repeat;
+  background-size: contain;
+}
+.eli11{
+  background: url('../images/8/e11.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli112{
+  background: url('../images/8/e11-x.png') no-repeat;
+  background-size: contain;
+}
+.eli12{
+  background: url('../images/8/e12.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli122{
+  background: url('../images/8/e12-x.png') no-repeat;
+  background-size: contain;
+}
+.eli13{
+  background: url('../images/8/e13.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli132{
+  background: url('../images/8/e13-x.png') no-repeat;
+  background-size: contain;
+}
+.eli14{
+  background: url('../images/8/e14.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli142{
+  background: url('../images/8/e14-x.png') no-repeat;
+  background-size: contain;
+}
+.eli15{
+  background: url('../images/8/e15.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli152{
+  background: url('../images/8/e15-x.png') no-repeat;
+  background-size: contain;
+}
+.eli16{
+  background: url('../images/8/e16.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli162{
+  background: url('../images/8/e16-x.png') no-repeat;
+  background-size: contain;
+}
+.eli17{
+  background: url('../images/8/e17.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli172{
+  background: url('../images/8/e17-x.png') no-repeat;
+  background-size: contain;
+}
+.eli18{
+  background: url('../images/8/e18.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli182{
+  background: url('../images/8/e18-x.png') no-repeat;
   background-size: contain;
 }
 

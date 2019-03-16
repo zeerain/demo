@@ -8,7 +8,7 @@ import $ from 'jquery'
 require('./js/js.fullpage.js')
 
 var forEach = [].forEach;
-$('.wp-inner')[0].fullpage();
+// $('.wp-inner')[0].fullpage();
 
 $('.wp-inner')[0].fullpage({
     change: function (e) {
@@ -70,11 +70,14 @@ $('.wp-inner')[0].fullpage({
         }
 
         if (e.cur === 7) {
-            $(".wp-inner").swipeUp(function(){
-                $.fn.fullpage.unholdTouch();
-            }).swipeDown(function(){
-                $.fn.fullpage.unholdTouch();
-            }); 
+            // $.fn.fullpage.stop();
+
+            $("#scene8").on("touchmove",function(e){
+            // console.log('this', $(this), $.fn);
+
+                e.stopPropagation();
+            });
+            
         }        
     },
     afterChange: function (e) {

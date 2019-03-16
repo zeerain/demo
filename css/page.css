@@ -8,11 +8,13 @@ html, body, .wp, .wp-inner{
   overflow: hidden;
   background: transparent;
 }
+html, body {
+  background: #ffffff;
+}
 
 #scene, #scene2,  #scene3, #scene4, #scene5, #scene6, #scene7, #scene8, #scene9, #scene10, #scene11, #scene12, #scene13, #scene14 {
   width: 100%;
   height: 100%;
-  background: #ffffff;
   position: relative;
 }
 #bg-scene > .nf {

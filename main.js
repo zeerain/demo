@@ -68,21 +68,10 @@ $('.wp-inner')[0].fullpage({
             $('.right-logo').addClass('t60')
 
         }
-
         if (e.cur === 7) {
-            // $.fn.fullpage.stop();
-
             $("#scene8").on("touchmove",function(e){
-            // console.log('this', $(this), $.fn);
-
                 e.stopPropagation();
             });
-            $("#scene8").on("touchend",function(e){
-                // console.log('this', $(this), $.fn);
-    
-                    e.stopPropagation();
-                });
-            
         }        
     },
     afterChange: function (e) {

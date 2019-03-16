@@ -19,7 +19,7 @@ $('.wp-inner')[0].fullpage({
             v.classList.remove(v.dataset['animate']);
             v.classList.add('hide');
         });
-        if (e.cur === 1  || e.cur === 2) {
+        if (e.cur === 1  || e.cur === 2 || e.cur === 6) {
             var background = new Image();
             background.src = './images/bg/bg2.jpg';
             $('#bg-scene').css({
@@ -37,6 +37,9 @@ $('.wp-inner')[0].fullpage({
             $('.nf').removeClass('hide')
             $('.center-invite-text').removeClass('hide')
             
+            $('.center-invite-text').removeClass('t100')
+            $('.left-logo').removeClass('t50')
+            $('.right-logo').removeClass('t60')
 
         } else if (e.cur === 0) {
             $('.left-icon').removeClass('hide')

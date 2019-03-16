@@ -494,3 +494,52 @@ html, body, .wp, .wp-inner{
   top: 365px !important;
   right: 40px;
 }
+.inner7 {
+  height: 100%;
+  padding: 160px 40px 50px 40px;
+  box-sizing: border-box;
+}
+.pli {
+  height: 25%;
+  display: flex;
+}
+.pli-l {
+  flex: 2;
+  height: 100%;
+}
+.pli-r {
+  flex: 1;
+  height: 100%;
+}
+.pli1 {
+  background: url('../images/7/t1-x.png') no-repeat;
+  background-size: 100% auto;
+}
+.pli12{
+  background: url('../images/7/t1.png') no-repeat;
+  background-size: 100% auto;
+}
+.pli2 {
+  background: url('../images/7/t2-x.png') no-repeat;
+  background-size: 100% auto;
+}
+.pli22{
+  background: url('../images/7/t2.png') no-repeat;
+  background-size: 100% auto;
+}
+.pli3 {
+  background: url('../images/7/t3-x.png') no-repeat;
+  background-size: 100% auto;
+}
+.pli32{
+  background: url('../images/7/t3.png') no-repeat;
+  background-size: 100% auto;
+}
+.pli4 {
+  background: url('../images/7/t4-x.png') no-repeat;
+  background-size: 100% auto;
+}
+.pli42{
+  background: url('../images/7/t4.png') no-repeat;
+  background-size: 100% auto;
+}

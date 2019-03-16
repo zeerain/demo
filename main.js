@@ -77,6 +77,11 @@ $('.wp-inner')[0].fullpage({
 
                 e.stopPropagation();
             });
+            $("#scene8").on("touchend",function(e){
+                // console.log('this', $(this), $.fn);
+    
+                    e.stopPropagation();
+                });
             
         }        
     },

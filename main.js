@@ -68,7 +68,14 @@ $('.wp-inner')[0].fullpage({
             $('.right-logo').addClass('t60')
 
         }
-        
+
+        if (e.cur === 7) {
+            $(".page").swipeUp(function(){
+                $.fn.fullpage.unholdTouch();
+            }).swipeDown(function(){
+                $.fn.fullpage.unholdTouch();
+            }); 
+        }        
     },
     afterChange: function (e) {
         console.log('afterChange666666');
@@ -82,7 +89,7 @@ $('.wp-inner')[0].fullpage({
             }, time);
         });
     },
-    dir: 'h'
+    dir: 'h',
 });
 setTimeout(function () {
 //   var scene = document.getElementById('bg-scene');

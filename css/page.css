@@ -543,3 +543,50 @@ html, body, .wp, .wp-inner{
   background: url('../images/7/t4.png') no-repeat;
   background-size: 100% auto;
 }
+.inner8 {
+  height: 100%;
+  margin-top: 160px;
+  padding: 0px 40px 50px 40px;
+  overflow: auto;
+  position: relative;
+}
+.in160 {
+  height: 160px;
+  width: 100%;
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.eli {
+  height: 60px;
+  display: flex;
+  margin-bottom: 15px;
+}
+.eli-l {
+  width: 80px;
+  height: 100%;
+}
+.eli-r {
+  border-top: 5px transparent solid;
+  border-bottom: 5px transparent solid;
+  box-sizing: border-box;
+  flex: 1;
+  height: 100%;
+}
+.eli1{
+  background: url('../images/8/e1.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli12{
+  background: url('../images/8/e1-x.png') no-repeat;
+  background-size: contain;
+}
+.eli2{
+  background: url('../images/8/e2.png') no-repeat;
+  background-size: auto 100%;
+}
+.eli22{
+  background: url('../images/8/e2-x.png') no-repeat;
+  background-size: contain;
+}

@@ -70,7 +70,7 @@ $('.wp-inner')[0].fullpage({
         }
 
         if (e.cur === 7) {
-            $(".page").swipeUp(function(){
+            $(".wp-inner").swipeUp(function(){
                 $.fn.fullpage.unholdTouch();
             }).swipeDown(function(){
                 $.fn.fullpage.unholdTouch();

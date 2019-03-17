@@ -166,7 +166,7 @@ html, body {
   background-repeat: no-repeat;
   position: absolute !important;
   top: calc(100% - 90px) !important;
-  left: calc(100% - 210px) !important;
+  left: calc(100% - 230px) !important;
   animation:change 4s linear infinite;
 }
 
@@ -558,7 +558,7 @@ html, body {
   overflow: auto;
   position: relative; */
   height: 100%;
-  padding: 150px 40px 30px 40px;
+  padding: 150px 5px 30px 40px;
   box-sizing: border-box;
 }
 .in160 {
@@ -579,12 +579,12 @@ html, body {
 }
 .eli-l {
   /* width: 80px; */
-  flex: 1;
+  flex: 0.8;
   height: 100%;
 }
 .eli-r {
-  border-top: 10px transparent solid;
-  border-bottom: 10px transparent solid;
+  border-top: 14px transparent solid;
+  border-bottom: 14px transparent solid;
   box-sizing: border-box;
   flex: 2;
   height: 100%;
@@ -595,7 +595,7 @@ html, body {
 }
 .eli12x{
   background: url('../images/8/e1-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli2{
   background: url('../images/8/e2.png') no-repeat;
@@ -603,7 +603,7 @@ html, body {
 }
 .eli22{
   background: url('../images/8/e2-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;;
 }
 .eli3{
   background: url('../images/8/e3.png') no-repeat;
@@ -611,7 +611,7 @@ html, body {
 }
 .eli32{
   background: url('../images/8/e3-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;;
 }
 .eli4{
   background: url('../images/8/e4.png') no-repeat;
@@ -619,7 +619,7 @@ html, body {
 }
 .eli42{
   background: url('../images/8/e4-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;;
 }
 .eli5{
   background: url('../images/8/e5.png') no-repeat;
@@ -627,7 +627,7 @@ html, body {
 }
 .eli52{
   background: url('../images/8/e5-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;;
 }
 .eli6{
   background: url('../images/8/e6.png') no-repeat;
@@ -635,7 +635,7 @@ html, body {
 }
 .eli62{
   background: url('../images/8/e6-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;;
 }
 .eli7{
   background: url('../images/8/e7.png') no-repeat;
@@ -643,7 +643,7 @@ html, body {
 }
 .eli72{
   background: url('../images/8/e7-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli8{
   background: url('../images/8/e8.png') no-repeat;
@@ -651,7 +651,7 @@ html, body {
 }
 .eli82{
   background: url('../images/8/e8-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli9{
   background: url('../images/8/e9.png') no-repeat;
@@ -659,7 +659,7 @@ html, body {
 }
 .eli92{
   background: url('../images/8/e9-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli10{
   background: url('../images/8/e10.png') no-repeat;
@@ -667,7 +667,7 @@ html, body {
 }
 .eli102{
   background: url('../images/8/e10-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli11{
   background: url('../images/8/e11.png') no-repeat;
@@ -675,7 +675,7 @@ html, body {
 }
 .eli112{
   background: url('../images/8/e11-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli12{
   background: url('../images/8/e12.png') no-repeat;
@@ -683,7 +683,7 @@ html, body {
 }
 .eli122{
   background: url('../images/8/e12-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli13{
   background: url('../images/8/e13.png') no-repeat;
@@ -691,7 +691,7 @@ html, body {
 }
 .eli132{
   background: url('../images/8/e13-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli14{
   background: url('../images/8/e14.png') no-repeat;
@@ -699,7 +699,7 @@ html, body {
 }
 .eli142{
   background: url('../images/8/e14-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli15{
   background: url('../images/8/e15.png') no-repeat;
@@ -707,7 +707,7 @@ html, body {
 }
 .eli152{
   background: url('../images/8/e15-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli16{
   background: url('../images/8/e16.png') no-repeat;
@@ -715,7 +715,7 @@ html, body {
 }
 .eli162{
   background: url('../images/8/e16-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli17{
   background: url('../images/8/e17.png') no-repeat;
@@ -723,7 +723,7 @@ html, body {
 }
 .eli172{
   background: url('../images/8/e17-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 .eli18{
   background: url('../images/8/e18.png') no-repeat;
@@ -731,7 +731,7 @@ html, body {
 }
 .eli182{
   background: url('../images/8/e18-x.png') no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 
 .pp1 {

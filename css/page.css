@@ -552,13 +552,8 @@ html, body {
   background-size: 100% auto;
 }
 .inner8 {
-  /* height: 100%;
-  margin-top: 160px;
-  padding: 0px 40px 50px 40px;
-  overflow: auto;
-  position: relative; */
   height: 100%;
-  padding: 150px 5px 30px 40px;
+  padding: 150px 4px 25px 40px;
   box-sizing: border-box;
 }
 .in160 {

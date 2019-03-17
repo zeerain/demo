@@ -199,66 +199,11 @@
                 <div class="eli-l eli6"></div>
                 <div class="eli-r eli62"></div>
               </div>
-
-              <!-- <div class="eli js-animate hide" data-animate="slideLeft" data-time="600">
-                <div class="eli-l eli7"></div>
-                <div class="eli-r eli72"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                <div class="eli-l eli8"></div>
-                <div class="eli-r eli82"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                <div class="eli-l eli9"></div>
-                <div class="eli-r eli92"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                <div class="eli-l eli10"></div>
-                <div class="eli-r eli102"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                <div class="eli-l eli11"></div>
-                <div class="eli-r eli112"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                <div class="eli-l eli12"></div>
-                <div class="eli-r eli122"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                <div class="eli-l eli13"></div>
-                <div class="eli-r eli132"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                <div class="eli-l eli14"></div>
-                <div class="eli-r eli142"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                <div class="eli-l eli15"></div>
-                <div class="eli-r eli152"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                <div class="eli-l eli16"></div>
-                <div class="eli-r eli162"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                <div class="eli-l eli17"></div>
-                <div class="eli-r eli172"></div>
-              </div>
-              <div class="eli js-animate hide" data-animate="slideLeft" data-time="700">
-                  <div class="eli-l eli18"></div>
-                  <div class="eli-r eli182"></div>
-                </div>
-                <div class="eli">
-                </div>
-                <div class="eli">
-                </div> -->
             </div>
           </div>
 
-
           <div class="page">
-            <div class="inner8">    
-
+            <div class="inner8">
                <div class="eli js-animate hide" data-animate="slideLeft" data-time="0">
                 <div class="eli-l eli7"></div>
                 <div class="eli-r eli72"></div>
@@ -287,8 +232,7 @@
             </div>
           </div>
           <div class="page">
-            <div class="inner8">
-              
+            <div class="inner8">        
               <div class="eli js-animate hide" data-animate="slideLeft" data-time="0">
                 <div class="eli-l eli13"></div>
                 <div class="eli-r eli132"></div>
@@ -340,7 +284,80 @@
         </div>
     </div>
     <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <!-- <script src="bundle.js"></script> -->
+    <script>  
+      //分享
+      function weixinShare(attr){
+          var wxconfig1 = {
+              title: attr.title,
+              link: attr.base,
+              success:wxshare,
+              imgUrl:attr.imgurl,
+              success: function(){
+              }
+          };
+          var wxconfig2 = {
+              title: attr.title,
+              desc: attr.desc,
+              link: attr.base,
+              success:wxshare,
+              imgUrl:attr.imgurl,
+              success: function(){
+              }
+          }
+          function wxshare() {
+              return false;
+          }
+          var uri = location.href.split("#")[0];
+          var path = uri.split("?")[0];
+          var query = uri.split("?")[1];
+          uri = path + (query ? ("?" + encodeURIComponent(query)) : "");
+          $.post("http://wemall.duoshouus.com/api", {
+            action: "get_wxconfig",
+                data: {
+                    url: uri
+                }
+            }, function(data) {
+              data = eval("(" + data + ")");
+              var apilist = [
+                  'onMenuShareTimeline',
+                  'onMenuShareAppMessage'
+              ];
+              wx.config({
+                  debug: false,
+                  appId: data.appid,
+                  timestamp: data.timestamp,
+                  nonceStr: data.noncestr,
+                  signature: data.signature,
+                  jsApiList: apilist
+              });
+              wx.error(function(res) {
+                  //alert(JSON.stringify(res));
+              });
+          }); 
+          wx.ready(function () {
+            if(attr.startAudioBg){
+                attr.startAudioBg();
+            }
+            wx.onMenuShareTimeline(wxconfig1);
+            wx.onMenuShareAppMessage(wxconfig2);
+          });  
+      }
+      
+      //微信分享设置
+      weixinShare({
+          base : location.href.split("#")[0],
+          title : "第五届雀巢健康科学营养论坛",
+          desc : "第五届雀巢健康科学营养论坛诚邀您的参加 3月31日-4月4日 上海·广州·成都·郑州·北京",
+          imgurl : "./images/bg/share.jpg",
+          startAudioBg : function(){
+              //播放音乐等
+          }
+      })
+	    
+
+    </script>
     <script>
       $(document).ready(function(){
         function loadScript(src, callback) {

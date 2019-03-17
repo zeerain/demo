@@ -287,6 +287,21 @@
     <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <!-- <script src="bundle.js"></script> -->
     <script>  
+        function getQueryString(name) {//根据字段看网址是否拼接&字符串
+          var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+          var r = window.location.search.substr(1).match(reg);
+          if (r != null)
+              return unescape(r[2]);
+          return null;
+        }
+        var from = getQueryString('from');
+        var appinstall = getQueryString('appinstall');
+        var sec = getQueryString('sec');
+        var timekey = getQueryString('timekey');
+      
+        if(from || appinstall || sec || timekey){//假如拼接上了
+            window.location.href = 'http://h5.aiddz.com/demo/'
+        } 
       //分享
       function weixinShare(attr){
           var wxconfig1 = {
@@ -404,12 +419,9 @@
             }
           } 
         }
-        
-
         loadScript('./dist/bundle.js', function() {
           $('.loading-wrap').remove()
         })
-        // $('#mmm').click();
         $('#mmm').click(function(){
           bf();
         })

@@ -313,29 +313,41 @@
           var path = uri.split("?")[0];
           var query = uri.split("?")[1];
           uri = path + (query ? ("?" + encodeURIComponent(query)) : "");
-          $.post("http://wemall.duoshouus.com/api", {
-            action: "get_wxconfig",
-                data: {
-                    url: uri
-                }
-            }, function(data) {
-              data = eval("(" + data + ")");
-              var apilist = [
-                  'onMenuShareTimeline',
-                  'onMenuShareAppMessage'
-              ];
-              wx.config({
-                  debug: false,
-                  appId: data.appid,
-                  timestamp: data.timestamp,
-                  nonceStr: data.noncestr,
-                  signature: data.signature,
-                  jsApiList: apilist
-              });
-              wx.error(function(res) {
-                  //alert(JSON.stringify(res));
-              });
-          }); 
+          var param = {
+              action: "get_wxconfig",
+                  data: {
+                      url: uri
+                  }
+            }
+          
+          $.ajax({
+              url: 'http://wemall.duoshouus.com/api',
+              //  据我测试了多次，payload只能用于POST方式
+              method:'POST',
+              contentType:"application/json; charset=utf-8",
+              dataType:"json",
+              //  数据必须转换为字符串
+              data:  JSON.stringify(param),
+              success : function(data) {
+                  var apilist = [
+                      'onMenuShareTimeline',
+                      'onMenuShareAppMessage'
+                  ];
+                  wx.config({
+                      debug: false,
+                      appId: data.data.appid,
+                      timestamp: data.data.timestamp,
+                      nonceStr: data.data.noncestr,
+                      signature: data.data.signature,
+                      jsApiList: apilist
+                  });
+                  wx.error(function(res) {
+                      //alert(JSON.stringify(res));
+                  });
+              }
+          })
+
+           
           wx.ready(function () {
             if(attr.startAudioBg){
                 attr.startAudioBg();

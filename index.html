@@ -53,6 +53,31 @@
         transform: rotate(1800deg);
       }
     }
+    .bgm-btn-wraper, .bgm-btn-wraper .bgm-btn {
+      position: absolute;
+      z-index: 200;
+      width: 30px;
+      height: 30px;
+    }
+    .bgm-btn-wraper {
+        right: 8px;
+        top: 8px;
+        display: none;
+    }
+    .bgm-btn-wraper .bgm-btn.rotate {
+        -webkit-animation: rotating 1.2s linear infinite;
+        animation: rotating 1.2s linear infinite;
+    }
+    .bgm-btn-wraper .bgm-btn {
+        right: 0;
+        top: 0;
+        border-radius: 15px;
+        background-image: url('./images/bg/muc.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    @-webkit-keyframes rotating{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+    @keyframes rotating{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
   </style>
 </head>
 <body>
@@ -66,12 +91,13 @@
     <div class="right-ball" data-depth="0.3"></div>
     <div class="nf hide" data-depth="0.3"></div>
     <div class="center-invite-text hide" data-depth="0.1"></div>
-    <!-- <div id="music" class="music">
-        <div id="music-btn" class="btn play">
-        </div>
-        <div id="music-text">开启</div>           
-    </div> -->
-
+    
+    
+  </div>
+  <div class="bgm-btn-wraper" id="mmm" style="display: block;">
+    <div class="bgm-btn rotate" style="animation-play-state: running;">
+      <audio loop="true" src="./images/bg/666.mp3" id="muc" autoplay preload="auto"></audio>
+    </div>
   </div>
 
 
@@ -335,9 +361,28 @@
             }
             head.appendChild(script);
         }
+        function bf(){
+          var audio = document.getElementById('muc'); 
+          if(audio!==null){             
+              //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+              // alert(audio.paused);
+            if(audio.paused) {                 
+                $('.bgm-btn').addClass('rotate')
+                audio.play();
+            }else{
+              $('.bgm-btn').removeClass('rotate')
+              audio.pause();// 这个就是暂停
+            }
+          } 
+        }
+        
 
         loadScript('./dist/bundle.js', function() {
           $('.loading-wrap').remove()
+        })
+        // $('#mmm').click();
+        $('#mmm').click(function(){
+          bf();
         })
       })
     </script>

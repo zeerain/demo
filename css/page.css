@@ -30,7 +30,7 @@ html, body {
   height: 23px;
   background-repeat: no-repeat;
 }
-#scene, #scene2,  #scene3, #scene4, #scene5, #scene6, #scene7, #scene8, #scene9, #scene10, #scene11, #scene12, #scene13, #scene14 {
+.page, #scene, #scene2,  #scene3, #scene4, #scene5, #scene6, #scene7, #scene8, #scene9, #scene10, #scene11, #scene12, #scene13, #scene14 {
   width: 100%;
   height: 100%;
   position: relative;
@@ -516,12 +516,14 @@ html, body {
 }
 .inner7 {
   height: 100%;
-  padding: 160px 40px 0px;
+  padding: 140px 40px 0px;
   box-sizing: border-box;
 }
 .pli {
   height: 25%;
   display: flex;
+  border-bottom: 15px transparent solid;
+  box-sizing: border-box;
 }
 .pli-l {
   flex: 2;
@@ -567,11 +569,14 @@ html, body {
   background-size: 100% auto;
 }
 .inner8 {
-  height: 100%;
+  /* height: 100%;
   margin-top: 160px;
   padding: 0px 40px 50px 40px;
   overflow: auto;
-  position: relative;
+  position: relative; */
+  height: 100%;
+  padding: 150px 40px 30px 40px;
+  box-sizing: border-box;
 }
 .in160 {
   height: 160px;
@@ -582,19 +587,23 @@ html, body {
   left: 0;
 }
 .eli {
-  height: 60px;
+  /* height: 60px; */
+  height: 16.6666%;
   display: flex;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  border-bottom: 15px transparent solid;
+  box-sizing: border-box;
 }
 .eli-l {
-  width: 80px;
+  /* width: 80px; */
+  flex: 1;
   height: 100%;
 }
 .eli-r {
   border-top: 10px transparent solid;
   border-bottom: 10px transparent solid;
   box-sizing: border-box;
-  flex: 1;
+  flex: 2;
   height: 100%;
 }
 .eli1{
@@ -748,7 +757,7 @@ html, body {
   background: url('../images/9/91.png') no-repeat;
   background-size: 100% auto;
   position: absolute !important;
-  top: 130px !important;
+  top: 120px !important;
   right: 40px;
 }
 .pp2 {
@@ -757,7 +766,7 @@ html, body {
   background: url('../images/9/92.png') no-repeat;
   background-size: 100% auto;
   position: absolute !important;
-  top: 180px !important;
+  top: 165px !important;
   right: 50%;
   margin-right: -50px;
 }
@@ -768,7 +777,7 @@ html, body {
   background: url('../images/9/93.png') no-repeat;
   background-size: 100% auto;
   position: absolute !important;
-  top: 220px !important;
+  top: 200px !important;
   right: 50%;
   margin-right: -134px;
 }
@@ -779,7 +788,7 @@ html, body {
   background: url('../images/9/94.png') no-repeat;
   background-size: 100% auto;
   position: absolute !important;
-  top: 250px !important;
+  top: 230px !important;
   right: 50%;
   margin-right: -33px;
 }
@@ -790,19 +799,19 @@ html, body {
   background: url('../images/9/95.png') no-repeat;
   background-size: 100% auto;
   position: absolute !important;
-  top: 275px !important;
+  top: 250px !important;
   right: 50%;
   margin-right: -87px;
 }
 .pp6 {
-  width: 246px;
-  height: 220px;
+  width: 234.78px;
+  height: 210px;
   background: url('../images/9/96.png') no-repeat;
   background-size: 100% auto;
   position: absolute !important;
-  top: 315px !important;
+  top: 290px !important;
   right: 50%;
-  margin-right: -123px;
+  margin-right: -117.39px;
 }
 .pp7 {
   width: 156px;
@@ -810,7 +819,7 @@ html, body {
   background: url('../images/9/97.png') no-repeat;
   background-size: 100% auto;
   position: absolute !important;
-  top: 545px !important;
+  top: 515px !important;
   right: 50%;
   margin-right: -78px;
 }

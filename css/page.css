@@ -137,11 +137,11 @@ html, body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: absolute !important;
-  top: calc(100% - 170px) !important;
-  left: calc(100% - 120px) !important;
-  animation: rotating 8s linear infinite;
+  top: calc(100% - 160px) !important;
+  left: calc(100% - 150px) !important;
+  animation: rotating 4s linear infinite;
   z-index: 200;
-  -webkit-animation: rotating 8s linear infinite;
+  -webkit-animation: rotating 4s linear infinite;
 }
 #bg-scene > .center-invite-text {
   width: 285px;
@@ -167,7 +167,7 @@ html, body {
   background-repeat: no-repeat;
   position: absolute !important;
   top: calc(100% - 90px) !important;
-  left: calc(100% - 230px) !important;
+  left: calc(100% - 250px) !important;
   animation:change 4s linear infinite;
 }
 
